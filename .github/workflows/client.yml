@@ -1,0 +1,15 @@
+name: Client
+
+on:
+  push:
+    paths-ignore:
+      - "server/**"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: CI Pipeline Here 
+        run: 'true'
