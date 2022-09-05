@@ -1,0 +1,17 @@
+name: Server (Branch) 
+
+on:
+  push:
+    branches-ignore:
+      - "main"
+    paths-ignore:
+      - "client/**"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: CI Pipeline 
+        run: 'true'
